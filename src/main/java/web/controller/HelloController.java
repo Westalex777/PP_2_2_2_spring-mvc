@@ -27,7 +27,7 @@ public class HelloController {
     @GetMapping("/cars")
     public String printCars(Model model, @RequestParam(value = "count", required = false) Optional<Integer> count) {
         CarService carService = new CarService();
-        model.addAttribute("cars", carService.getCars(count.orElse(5)));
+        model.addAttribute("cars", carService.getCars(count.orElse(Integer.MAX_VALUE)));
         return "cars";
     }
 }
