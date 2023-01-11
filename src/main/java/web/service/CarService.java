@@ -4,7 +4,6 @@ import web.model.Car;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.Optional;
 
 public class CarService {
 
