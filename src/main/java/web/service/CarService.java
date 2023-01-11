@@ -15,7 +15,7 @@ public class CarService {
             new Car(4, "Lada", "Red"),
             new Car(5, "KIA", "White"));
 
-    public List<Car> getCars(Optional<Integer> count) {
-        return cars.stream().limit(count.orElse(cars.size())).toList();
+    public List<Car> getCars(int count) {
+        return cars.stream().limit(count).toList();
     }
 }
